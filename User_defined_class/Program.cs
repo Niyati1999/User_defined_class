@@ -36,13 +36,21 @@ namespace User_defined_class
             Console.WriteLine(s2.length);
             Console.WriteLine(s3.length);
             Rectangle r1 = new Rectangle();
-            r1.l = 2;
-            r1.b = 1;
+            //r1.l = -2;
+            r1.setLength(2);
+            r1.B = 1;
             int result1 = r1.area();
             int result2 = r1.perimeter();
             Console.WriteLine("Rectangle !!!");
+            Console.WriteLine(r1.getLenght());
+            Console.WriteLine(r1.B);
             Console.WriteLine("Area = " + result1);
             Console.WriteLine("perimeter = " + result2);
+            Console.WriteLine("Circle !!!");
+            Circle c1 = new Circle();
+            c1.Radius = 2;
+            
+            Console.WriteLine(c1.area());
         }
     }
 }
